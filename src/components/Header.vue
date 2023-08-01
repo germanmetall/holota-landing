@@ -9,7 +9,7 @@
         class="header__link"
         v-for="(link, counter) in links"
         :class="{ 'header__link--active': activeLink == counter }"
-        :href="link.href"
+        :href="`#${link.href}`"
       >
         {{ link.name }}
       </a>
@@ -39,7 +39,7 @@
     </svg>
 
     <div class="menu">
-      
+
     </div>
   </header>
 </template>
@@ -53,6 +53,30 @@ const
     {
       name: 'Про курс',
       href: 'about'
+    },
+    {
+      name: 'Автор',
+      href: 'author'
+    },
+    {
+      name: 'Програма',
+      href: 'program'
+    },
+    {
+      name: 'Про процес',
+      href: 'about'
+    },
+    {
+      name: 'Відгуки',
+      href: 'feedback'
+    },
+    {
+      name: 'Для кого',
+      href: 'audience'
+    },
+    {
+      name: 'Тарифи',
+      href: 'tariffs'
     }
   ]),
   activeLink = ref(0)
@@ -60,6 +84,8 @@ const
 
 <style lang="scss" scoped>
 .header {
+  top: 0;
+  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -68,6 +94,8 @@ const
   height: 66px;
   padding: 0px 84px;
   color: #FFF;
+  background: rgba(27, 27, 27, 0.10);
+  backdrop-filter: blur(25px);
 
   &__logo {
     text-align: right;
@@ -95,6 +123,7 @@ const
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 32px;
     }
   }
 
@@ -106,4 +135,27 @@ const
     line-height: 120%;
     text-transform: uppercase;
   }
-}</style>
+
+  &__burger {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+
+    &__links,
+    &__buy {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+}
+</style>

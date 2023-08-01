@@ -17,6 +17,11 @@
 
 <style lang="scss" scoped>
 .banner {
+  display: flex;
+  flex-direction: row;
+  gap: 0 112px;
+  padding: 28px 73px;
+  margin: 0 auto 226px;
   width: 842px;
   height: 192px;
   border-radius: 40px;
@@ -24,8 +29,20 @@
 }
 
 .item {
-  &__heading {}
+  &__heading {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
 
-  &__text {}
-}
-</style>
+  &__text {
+    margin-top: 8px;
+    color: #ffffff66;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+}</style>

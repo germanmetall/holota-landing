@@ -3,13 +3,15 @@
     <h1 class="banner__h1">Курс "Мідл UX/UI дизайнер"</h1>
     <h2 class="banner__h2">Як UX/UI або Product дизайнеру зробити мінімум х2 до свого доходу</h2>
 
-    <div class="btn">
-      Придбати одразу
-      <Arrow />
-    </div>
-    <div class="btn btn--transparent">
-      Маю сумніви
-      <Arrow />
+    <div class="banner__actions">
+      <div class="btn">
+        Придбати одразу
+        <Arrow />
+      </div>
+      <div class="btn btn--transparent">
+        Маю сумніви
+        <Arrow />
+      </div>
     </div>
 
     <div class="banner__text">
@@ -28,8 +30,62 @@ import Arrow from '@/components/Arrow.vue'
 
 <style lang="scss" scoped>
 .banner {
-  width: 100%;
-  padding: 0 40px;
+  display: grid;
+  grid-template-columns: auto 560px;
+  grid-template-rows: 76px 70px auto;
+  gap: 30px 132px;
+  width: calc(100% - 2 * 40px);
+  height: 532px;
+  padding: 40px 56px 54px 44px;
+  margin: 0 40px;
   border-radius: 40px;
+  background: lightgray 50%;
+  background-image: url('@/assets/images/banner-1-bg.jpeg'), linear-gradient(135deg, #190933 0%, #0C0419 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__h1 {
+    margin: unset;
+    color: #FFF;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    grid-column: span 2;
+  }
+
+  &__h2 {
+    margin: unset;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
+
+  &__actions {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__text {
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+
+    ul {
+      margin: unset;
+    }
+  }
 }
 </style>
