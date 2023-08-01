@@ -7,6 +7,7 @@
   <Banner2 />
   <Author />
   <Lesson />
+  <Banner3 />
   <Program />
   <Motivation />
   <Btn />
@@ -33,6 +34,7 @@ import FeedbackVideo from './components/articles/Feedback-video.vue';
 import Tariffs from './components/articles/Tariffs.vue';
 import Hesitate from './components/articles/Hesitate.vue';
 import Footer from './components/Footer.vue';
+import Banner3 from './components/articles/Banner-3.vue';
 </script>
 
 <style lang="scss">

@@ -9,7 +9,7 @@
     <div class="author__text">
       Продуктовий діджитал дизайнер з майже 10 роками досвіду у розробці цифрових продуктів та управлінні проектами.
       Викладаю більше 7 років індивідуально, а також на онлайн та офлайн курсах, працював із 500+ студентами.
-      <br />
+      <br /><br />
       Працював в Ubisoft на проекті з більш ніж 80 млн гравців.
     </div>
 
@@ -21,7 +21,7 @@
       <Arrow />
     </a>
 
-    <Video>Хай, го знайомитись</Video>
+    <Video class="author__video">Хай, го знайомитись</Video>
   </article>
 </template>
 
@@ -32,6 +32,11 @@ import Video from '@/components/Video.vue'
 
 <style lang="scss" scoped>
 .author {
+  width: 1065px;
+  display: grid;
+  grid-template-columns: 332px auto;
+  gap: 0 118px;
+  margin: 0 auto;
   &__heading {
     color: #fff;
     font-size: 22px;
@@ -45,6 +50,7 @@ import Video from '@/components/Video.vue'
   }
 
   &__underheading {
+    margin-top: 5px;
     color: #ffffff4d;
     font-size: 16px;
     font-style: normal;
@@ -53,6 +59,8 @@ import Video from '@/components/Video.vue'
   }
 
   &__text {
+    margin-top: 30px;
+    margin-right: 20px;
     color: #FFF;
     font-size: 16px;
     font-style: normal;
@@ -61,6 +69,7 @@ import Video from '@/components/Video.vue'
   }
 
   &__link {
+    margin-top: 74px;
     text-decoration: none;
     color: #EB4F3C;
     font-size: 12px;
@@ -70,7 +79,11 @@ import Video from '@/components/Video.vue'
     text-transform: uppercase;
   }
 
-  &__video{}
+  &__video{
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    order: 0;
+  }
 }
 
 .video{
