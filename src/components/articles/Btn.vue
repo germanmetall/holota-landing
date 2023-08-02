@@ -8,3 +8,13 @@
 <script setup>
 import Arrow from '@/components/Arrow.vue'
 </script>
+
+<style lang="scss" scoped>
+.btn{
+  width: fit-content;
+  margin: 96px auto 135px;
+  svg {
+    margin-left: 40px;
+  }
+}
+</style>

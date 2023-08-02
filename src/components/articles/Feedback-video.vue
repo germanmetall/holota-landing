@@ -1,8 +1,8 @@
 <template>
   <article class="feedback-videos">
-    <Video>Відгук від Наді</Video>
-    <Video>Відгук від Наді</Video>
-    <div class="feedback-videos__block">
+    <Video class="feedback-videos__block">Відгук від Наді</Video>
+    <Video class="feedback-videos__block">Відгук від Наді</Video>
+    <div class="feedback-videos__block feedback-videos__block--welcome">
       <svg
         width="50"
         height="50"
@@ -29,3 +29,39 @@
 <script setup>
 import Video from '@/components/Video.vue'
 </script>
+
+<style lang="scss" scoped>
+.feedback-videos {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 2 * 126px);
+  margin: 120px 126px 170px;
+
+  &__block {
+    width: 100%;
+    height: 495px;
+
+    &--welcome {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      border-radius: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+
+      color: #FFF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      text-transform: uppercase;
+
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+</style>

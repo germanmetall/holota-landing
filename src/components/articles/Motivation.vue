@@ -24,7 +24,7 @@
           href=""
         >
           я новачок, їду дивитись
-          <Arrow />
+          <Arrow style="width: 15px; height: 15px; margin-left: 20px;" />
         </a>
       </div>
     </div>
@@ -34,3 +34,64 @@
 <script setup>
 import Arrow from '@/components/Arrow.vue'
 </script>
+
+<style lang="scss" scoped>
+.motivation {
+  display: grid;
+  grid-template-columns: auto 330px;
+  gap: 28px 0;
+  margin: 0 169px;
+
+  &__heading {
+    grid-column: 1 / span 2;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
+}
+
+.block {
+  max-width: 500px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+
+  &__heading {
+    color: #D19335;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    color: #FFF;
+
+    ul {
+      list-style-type: '— ';
+      padding-left: 22px;
+      margin: unset;
+
+      li:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Unbounded;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #EB4F3C;
+    text-decoration: unset;
+  }
+}
+</style>

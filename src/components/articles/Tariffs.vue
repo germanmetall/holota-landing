@@ -77,3 +77,149 @@
     <div class="tariffs__under">*Кожні 3 місяці ціна зростає, тому встигни зараз, аби не прогавити момент.</div>
   </article>
 </template>
+
+<style lang="scss" scoped>
+.tariff {
+  position: relative;
+  width: 383px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px 20px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  &--video {
+    border: 1px solid #2F8DC1;
+    background: linear-gradient(315deg, rgba(47, 141, 193, 0.10) 0%, rgba(47, 141, 193, 0.00) 100%);
+  }
+
+  &--personal {
+    border: 1px solid #D19335;
+    background: linear-gradient(315deg, rgba(209, 147, 53, 0.10) 0%, rgba(209, 147, 53, 0.00) 100%);
+  }
+
+  &--sale::before {
+    content: 'Літній SALE до 1 вересня!';
+    position: absolute;
+    z-index: 2;
+    width: max-content;
+    top: -62px;
+    left: -9px;
+    border-radius: 110px;
+    background: #00FFF0;
+    transform: rotate(3.27deg);
+    padding: 10px 30px;
+    color: #1B1B1B;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
+
+  &s {
+    display: grid;
+    grid-template-columns: repeat(3, 382px);
+    justify-content: space-between;
+    width: calc(100% - 2 * 126px);
+    margin: 153px 126px 137px;
+
+    &__heading {
+      grid-column: 1 / span 3;
+      margin-left: 45px;
+      margin-bottom: 30px;
+      color: #FFF;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
+
+    &__under {
+      margin-top: 30px;
+      grid-column: 1 / span 3;
+      text-align: center;
+      color: #ffffff4d;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
+  }
+
+  &__heading {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+
+  &__underheading {
+    color: #ffffff4d;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+
+    ul {
+      margin: 0;
+    }
+  }
+
+  &__price {
+    margin-top: auto;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+
+    &--old {
+      display: inline;
+      margin-left: 18px;
+      color: #ffffff4d;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+      text-decoration-line: line-through;
+      text-transform: uppercase;
+    }
+  }
+
+  &__hrn {
+    color: #ffffff4d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    cursor: pointer;
+  }
+}
+</style>

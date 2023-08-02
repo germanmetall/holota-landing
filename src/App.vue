@@ -13,7 +13,7 @@
   <Btn />
   <FeedbackImages />
   <FeedbackVideo />
-  <Text>Починай вчитися одразу після оплати, у тебе буде доступ до бота та матеріалів</Text>
+  <Text style="margin: 0 auto;">Починай вчитися одразу після оплати, у тебе буде доступ до бота та матеріалів</Text>
   <Tariffs />
   <Hesitate />
   <Footer />

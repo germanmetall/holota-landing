@@ -85,6 +85,7 @@ const
 <style lang="scss" scoped>
 .header {
   top: 0;
+  z-index: 3;
   position: sticky;
   display: flex;
   flex-direction: row;
