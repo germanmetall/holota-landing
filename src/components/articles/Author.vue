@@ -17,7 +17,7 @@
       class="author__link"
       href="https://www.yevhenholota.com/"
     >
-      https://www.yevhenholota.com
+      yevhenholota.com
       <Arrow />
     </a>
 
@@ -86,8 +86,25 @@ import Video from '@/components/Video.vue'
   }
 }
 
-.video{
-  &__control{}
-  &__icon{}
+@media screen and (max-width: 800px) {
+  .author{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2 * 20px);
+    text-align: center;
+    &__heading--color{
+      font-size: 18px;
+    }
+    &__underheading{
+      margin-top: 10px;
+    }
+    &__text{
+      font-size: 14px;
+      margin: 40px 0;
+    }
+    &__link{
+      margin: unset;
+    }
+  }
 }
 </style>

@@ -197,7 +197,8 @@ const structure = ref({
 
 <style lang="scss" scoped>
 .program {
-  margin: 147px 169px 173px;
+  width: min(calc(100% - 2 * 40px), 1100px);
+  margin: 147px auto 173px;
 
   &__heading {
     margin-bottom: 41px;
@@ -298,5 +299,47 @@ const structure = ref({
   font-style: normal;
   font-weight: 300;
   line-height: 160%;
+}
+
+@media screen and (max-width: 800px) {
+  .program {
+    width: calc(100% - 2 * 20px);
+    margin: 133px auto 81px;
+
+    &__heading {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .tariff {
+    gap: 20px;
+  }
+
+  .module {
+    display: flex;
+    flex-direction: column;
+
+    &--video, &--personal{
+      height: unset !important;
+    }
+
+    &__name{
+      gap: 20px;
+    }
+
+    &__goal {
+      margin-top: 30px;
+      margin-bottom: 55px;
+
+      .module__heading {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__keywords {
+      width: auto;
+    }
+  }
 }
 </style>

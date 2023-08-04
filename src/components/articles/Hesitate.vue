@@ -23,7 +23,7 @@
 
     <img
       class="hesitate__img"
-      src="@/assets/images/hesitate.jpeg"
+      src="@/assets/images/hesitate.png"
       alt=""
     />
   </article>
@@ -74,7 +74,30 @@ import Arrow from '@/components/Arrow.vue'
     width: 309px;
     height: 463px;
     border-radius: 3300px;
-    filter: grayscale(1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hesitate {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2 * 20px);
+    margin: 107px auto 187px;
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      margin: 86px auto 60px;
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__img {
+      margin: auto;
+    }
   }
 }
 </style>

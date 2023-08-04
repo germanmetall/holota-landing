@@ -80,6 +80,8 @@
   position: relative;
   width: 100%;
   height: 820px;
+  max-width: 1200px;
+  margin: 120px auto 170px;
 }
 
 .card {
@@ -96,6 +98,7 @@
 
   &__heading {
     color: #1B1B1B;
+    margin-bottom: 24px;
   }
 
   &__avatar {
@@ -112,29 +115,79 @@
   }
 }
 
-#card-{
-  &1{
+#card- {
+  &1 {
     width: 500px;
-    left: 106px;
+    left: 0px;
     top: 0;
     transform: rotate(-12.835deg);
   }
-  &2{
+
+  &2 {
     width: 500px;
-    right: 193px;
+    right: 90px;
     top: 140px;
   }
-  &3{
+
+  &3 {
     width: 450px;
-    left: 183px;
+    left: 40px;
     top: 500px;
     transform: rotate(7.012deg);
   }
-  &4{
+
+  &4 {
     width: 430px;
-    right: 176px;
+    right: 80px;
     top: 550px;
     transform: rotate(-5.765deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feedback-images {
+    height: 360px;
+    margin: 58px auto 81px;
+  }
+
+  .card {
+    width: 220px !important;
+    padding: 10px 12px;
+    border-radius: 20px;
+
+    &__heading {
+      font-size: 7.246px;
+      margin-bottom: 12px;
+      line-height: 160%;
+    }
+
+    &__text {
+      font-size: 6.341px;
+      line-height: 160%;
+    }
+
+    &__avatar {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  #card {
+    &-2 {
+      transform: rotate(-9.869deg);
+      right: -6px;
+      top: 90px;
+    }
+
+    &-3 {
+      left: -7px;
+      top: 170px;
+    }
+
+    &-4 {
+      right: -7px;
+      top: 240px;
+    }
   }
 }
 </style>

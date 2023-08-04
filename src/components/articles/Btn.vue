@@ -17,4 +17,10 @@ import Arrow from '@/components/Arrow.vue'
     margin-left: 40px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .btn{
+    margin-bottom: 58px;
+  }
+}
 </style>

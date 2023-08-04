@@ -40,6 +40,7 @@
 
   &__text {
     width: 550px;
+
     &--heading {
       width: 451px;
       color: #D19335;
@@ -58,6 +59,34 @@
   &__img {
     grid-column: 2;
     grid-row: 1 / span 3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lesson {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100% - 2 * 20px);
+    margin: 133px auto;
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__text {
+      width: unset;
+      font-size: 14px;
+      &--heading {
+        width: unset;
+        font-size: 18px;
+      }
+    }
+
+    &__img{
+      width: calc(100% - 2 * 77px);
+      margin: 20px auto 0;
+    }
   }
 }
 </style>

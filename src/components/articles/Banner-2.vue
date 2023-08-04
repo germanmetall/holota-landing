@@ -45,4 +45,25 @@
     font-weight: 300;
     line-height: 140%;
   }
-}</style>
+}
+
+@media screen and (max-width: 800px) {
+  .banner{
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 52px 44px;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 97px;
+  }
+  .item{
+    &__heading{
+      font-size: 30px;
+    }
+    &__text{
+      font-size: 14px;
+    }
+  }
+}
+</style>

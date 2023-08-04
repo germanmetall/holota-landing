@@ -34,10 +34,10 @@ import Arrow from '@/components/Arrow.vue'
   grid-template-columns: auto 560px;
   grid-template-rows: 76px 70px auto;
   gap: 30px 132px;
-  width: calc(100% - 2 * 40px);
+  width: min(calc(100% - 2 * 40px), 1360px);
   height: 532px;
   padding: 40px 56px 54px 44px;
-  margin: 0 40px;
+  margin: 0 auto;
   border-radius: 40px;
   background: lightgray 50%;
   background-image: url('@/assets/images/banner-1-bg.jpeg'), linear-gradient(135deg, #190933 0%, #0C0419 100%);
@@ -85,6 +85,35 @@ import Arrow from '@/components/Arrow.vue'
 
     ul {
       margin: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2 * 20px);
+    height: 690px;
+    padding: 33px 25px 9px;
+
+    &__h1 {
+      font-size: 34px;
+    }
+
+    &__h2 {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      order: 2;
+      text-align: center;
     }
   }
 }

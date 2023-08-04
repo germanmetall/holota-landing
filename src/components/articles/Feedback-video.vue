@@ -35,11 +35,12 @@ import Video from '@/components/Video.vue'
   display: flex;
   flex-direction: row;
   width: calc(100% - 2 * 126px);
-  margin: 120px 126px 170px;
+  max-width: 1200px;
+  margin: 120px auto 170px;
 
   &__block {
     width: 100%;
-    height: 495px;
+    aspect-ratio: 1/1.25;
 
     &--welcome {
       display: flex;
@@ -60,6 +61,19 @@ import Video from '@/components/Video.vue'
       svg {
         width: 50px;
         height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feedback-videos {
+    width: calc(100% - 2 * 20px);
+    margin: 0 auto 102px;
+
+    &__block {
+      &--welcome {
+        display: none;
       }
     }
   }

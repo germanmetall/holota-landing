@@ -24,7 +24,7 @@
       <div class="tariff__btn">Частинами $50 / місяць</div>
     </div>
 
-    <div class="tariff tariff--sale tariff--video">
+    <div class="tariff tariff--video">
       <div class="tariff__heading">База + відео-фідбек</div>
       <div class="tariff__underheading">*без зворотнього звʼязку</div>
 
@@ -33,6 +33,7 @@
           <li>Відео-уроки</li>
           <li>Завдання</li>
           <li>Доступ до матеріалів</li>
+          <br/>
           <li>Відео-фідбек 2 місяці</li>
         </ul>
       </div>
@@ -56,7 +57,9 @@
           <li>Відео-уроки</li>
           <li>Завдання</li>
           <li>Доступ до матеріалів</li>
+          <br/>
           <li>Відео-фідбек 2 місяці</li>
+          <br/>
           <li>Допомога з Резюме</li>
           <li>Допомога з Портфоліо</li>
           <li>Допомога з Співбесідами</li>
@@ -82,6 +85,7 @@
 .tariff {
   position: relative;
   width: 383px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   padding: 28px 20px 20px 20px;
@@ -98,30 +102,32 @@
     background: linear-gradient(315deg, rgba(209, 147, 53, 0.10) 0%, rgba(209, 147, 53, 0.00) 100%);
   }
 
-  &--sale::before {
-    content: 'Літній SALE до 1 вересня!';
-    position: absolute;
-    z-index: 2;
-    width: max-content;
-    top: -62px;
-    left: -9px;
-    border-radius: 110px;
-    background: #00FFF0;
-    transform: rotate(3.27deg);
-    padding: 10px 30px;
-    color: #1B1B1B;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 160%;
-  }
-
   &s {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 382px);
     justify-content: space-between;
     width: calc(100% - 2 * 126px);
-    margin: 153px 126px 137px;
+    max-width: 1200px;
+    margin: 153px auto 137px;
+
+    &::before {
+      content: 'Літній SALE до 1 вересня!';
+      position: absolute;
+      z-index: 2;
+      width: max-content;
+      top: 35px;
+      left: calc((100% - 480px) / 2 + 40px);
+      border-radius: 110px;
+      background: #00FFF0;
+      transform: rotate(3.27deg);
+      padding: 10px 30px;
+      color: #1B1B1B;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 160%;
+    }
 
     &__heading {
       grid-column: 1 / span 3;
@@ -173,6 +179,7 @@
 
     ul {
       margin: 0;
+      padding-left: 28px;
     }
   }
 
@@ -220,6 +227,46 @@
     font-weight: 300;
     line-height: 160%;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tariff {
+    width: 100%;
+    height: auto;
+
+    &s {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: calc(100% - 2 * 20px);
+      margin: 109px auto 107px;
+
+      &::before {
+        top: 80px;
+        font-size: 22px;
+      }
+
+      &__heading {
+        margin-left: 4px;
+        margin-bottom: 50px;
+      }
+
+      &__under{
+        margin-top: 78px;
+      }
+    }
+
+    &__price{
+      margin-top: 50px;
+    }
+
+    &__btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 64px;
+    }
   }
 }
 </style>

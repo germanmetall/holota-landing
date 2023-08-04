@@ -37,10 +37,11 @@ import Arrow from '@/components/Arrow.vue'
 
 <style lang="scss" scoped>
 .motivation {
+  width: min(calc(100% - 2 * 40px), 1020px);
   display: grid;
   grid-template-columns: auto 330px;
   gap: 28px 0;
-  margin: 0 169px;
+  margin: 0 auto;
 
   &__heading {
     grid-column: 1 / span 2;
@@ -92,6 +93,25 @@ import Arrow from '@/components/Arrow.vue'
     text-transform: uppercase;
     color: #EB4F3C;
     text-decoration: unset;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .motivation {
+    width: calc(100% - 2 * 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__heading {
+      font-size: 34px;
+    }
+  }
+
+  .block{
+    &:nth-of-type(3){
+      margin-top: 35px;
+    }
   }
 }
 </style>

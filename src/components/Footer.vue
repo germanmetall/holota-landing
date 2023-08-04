@@ -43,7 +43,9 @@ import Arrow from '@/components/Arrow.vue'
 <style lang="scss" scoped>
 .footer {
   position: relative;
-  margin: 40px;
+  width: min(calc(100% - 2 * 40px), 1360px);
+  max-width: 1360px;
+  margin: 40px auto;
   padding: 60px;
   padding-bottom: 38px;
   border-radius: 40px;
@@ -151,6 +153,7 @@ import Arrow from '@/components/Arrow.vue'
     font-weight: 400;
     line-height: 120%;
     text-transform: uppercase;
+    margin-bottom: 13px;
   }
 
   &__underheading {
@@ -159,6 +162,46 @@ import Arrow from '@/components/Arrow.vue'
     font-style: normal;
     font-weight: 300;
     line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    width: calc(100% - 2 * 20px);
+    margin: 0 20px 40px;
+    padding: 40px 35px;
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        &__heading {
+          font-size: 22px;
+        }
+      }
+
+      .block {
+        margin-left: unset;
+
+        &__button:nth-of-type(3) {
+          margin-bottom: unset;
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+
+      >div {
+        margin-left: unset !important;
+
+        &:nth-of-type(1) {
+          order: 2;
+        }
+      }
+    }
   }
 }
 </style>
