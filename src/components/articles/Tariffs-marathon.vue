@@ -182,6 +182,10 @@ import Arrow from '@/components/Arrow.vue'
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;

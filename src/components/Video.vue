@@ -49,15 +49,16 @@
 <script setup>
 import { onMounted, ref, watch } from 'vue';
 
+let props = defineProps(['width'])
+
 const isVideoPlaying = ref(false),
   inited = ref(false),
   videoText = ref()
 
 watch(isVideoPlaying, () => {
-  return;
   console.log(videoText.value);
   if(!isVideoPlaying.value) {
-    videoText.value.style.width = videoText.value.scrollWidth + 'px';
+    videoText.value.style.width = props.width + 'px';
     videoText.value.style.marginRight = 0;
   }
   else {
@@ -67,7 +68,7 @@ watch(isVideoPlaying, () => {
 })
 
 onMounted(() => {
-  //videoText.value.style.width = videoText.value.scrollWidth + 'px';
+  videoText.value.style.width = props.width + 'px';
 })
 </script>
 
@@ -110,6 +111,7 @@ onMounted(() => {
   }
 
   &__text{
+    white-space: nowrap;
     transition: .3s;
     overflow: hidden;
   }

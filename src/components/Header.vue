@@ -89,11 +89,11 @@ const
   activeLink = ref(0)
 
 const openMenu = () => {
-  document.body.style.overflow = 'hidden';
+  document.body.parentElement.style.overflow = 'hidden';
   document.querySelector('.menu').classList.add('menu--toggled')
 }
 const closeMenu = () => {
-  document.body.style.overflow = 'auto';
+  document.body.parentElement.style.overflow = 'auto';
   document.querySelector('.menu').classList.remove('menu--toggled')
 }
 </script>
@@ -102,7 +102,7 @@ const closeMenu = () => {
 .header {
   top: 0;
   z-index: 3;
-  position: sticky;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -167,7 +167,7 @@ const closeMenu = () => {
 
 @media screen and (max-width: 800px) {
   .header {
-    width: 100%;
+    width: 100vw;
     padding: 24px 20px;
 
     &__logo {

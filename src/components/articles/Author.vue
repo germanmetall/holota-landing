@@ -21,7 +21,10 @@
       <Arrow />
     </a>
 
-    <Video class="author__video">Хай, го знайомитись</Video>
+    <Video
+      class="author__video"
+      :width="180"
+    >Хай, го знайомитись</Video>
   </article>
 </template>
 
@@ -37,6 +40,7 @@ import Video from '@/components/Video.vue'
   grid-template-columns: 332px auto;
   gap: 0 118px;
   margin: 0 auto;
+
   &__heading {
     color: #fff;
     font-size: 22px;
@@ -79,7 +83,7 @@ import Video from '@/components/Video.vue'
     text-transform: uppercase;
   }
 
-  &__video{
+  &__video {
     grid-column: 1;
     grid-row: 1 / span 4;
     order: 0;
@@ -87,23 +91,31 @@ import Video from '@/components/Video.vue'
 }
 
 @media screen and (max-width: 800px) {
-  .author{
+  .author {
     display: flex;
     flex-direction: column;
     width: calc(100% - 2 * 20px);
     text-align: center;
-    &__heading--color{
+
+    &__heading--color {
       font-size: 18px;
     }
-    &__underheading{
+
+    &__underheading {
       margin-top: 10px;
     }
-    &__text{
+
+    &__text {
       font-size: 14px;
       margin: 40px 0;
     }
-    &__link{
+
+    &__link {
       margin: unset;
+    }
+
+    &__video {
+      margin-top: 70px;
     }
   }
 }

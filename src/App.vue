@@ -1,9 +1,15 @@
 <template>
-  <RouterView />
+  <Header />
+  <div class="page">
+    <RouterView />
+  </div>
+  <Footer />
 </template>
 
 <script setup>
+import Header from '@/components/Header.vue';
 import { RouterView } from 'vue-router';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <style lang="scss">
@@ -30,16 +36,19 @@ import { RouterView } from 'vue-router';
   font-family: Unbounded;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   padding: 0;
   margin: 0;
   background: #1B1B1B;
   scroll-behavior: smooth;
+}
+
+#app {
   overflow-x: hidden;
+}
+
+.page {
+  margin-top: calc(66px + 50px);
 }
 
 .btn {

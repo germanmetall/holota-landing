@@ -26,6 +26,7 @@
 
     <div class="tariff tariff--video">
       <div class="tariff__heading">База + відео-фідбек</div>
+      <div class="tariff__underheading"></div>
 
       <div class="tariff__text">
         <ul>
@@ -49,6 +50,7 @@
 
     <div class="tariff tariff--personal">
       <div class="tariff__heading">індивідуалка 2 місяці</div>
+      <div class="tariff__underheading"></div>
 
       <div class="tariff__text">
         <ul>
@@ -159,8 +161,9 @@
     }
 
     &__crypto {
-      grid-column: 2;
-      margin-top: 85px;
+      max-width: 486px;
+      grid-column: 1 / span 3;
+      margin: 85px auto 0;
       padding: 10px 30px;
       border-radius: 110px;
       background: #D19335;
@@ -241,6 +244,10 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;

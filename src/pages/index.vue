@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <Banner1 />
   <Text>
     Практичний курс дизайну якщо є трохи досвіду, але відчуваєш що чогось бракує щоб зробити х2
@@ -16,11 +15,9 @@
   <Text style="margin: 0 auto;">Починай вчитися одразу після оплати, у тебе буде доступ до бота та матеріалів</Text>
   <Tariffs />
   <Hesitate />
-  <Footer />
 </template>
 
 <script setup>
-import Header from '@/components/Header.vue';
 import Author from '@/components/articles/Author.vue';
 import Banner1 from '@/components/articles/Banner-1.vue';
 import Banner2 from '@/components/articles/Banner-2.vue';
@@ -33,6 +30,5 @@ import FeedbackImages from '@/components/articles/Feedback-images.vue';
 import FeedbackVideo from '@/components/articles/Feedback-video.vue';
 import Tariffs from '@/components/articles/Tariffs.vue';
 import Hesitate from '@/components/articles/Hesitate.vue';
-import Footer from '@/components/Footer.vue';
 import Banner3 from '@/components/articles/Banner-3.vue';
 </script>

@@ -1,7 +1,7 @@
 <template>
   <article class="feedback-videos">
-    <Video class="feedback-videos__block">Відгук від Наді</Video>
-    <Video class="feedback-videos__block">Відгук від Наді</Video>
+    <Video class="feedback-videos__block" :width="127">Відгук від Наді</Video>
+    <Video class="feedback-videos__block" :width="127">Відгук від Наді</Video>
     <div class="feedback-videos__block feedback-videos__block--welcome">
       <svg
         width="50"
