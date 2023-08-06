@@ -108,7 +108,7 @@ const closeMenu = () => {
   align-items: center;
   justify-content: space-between;
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 calc((100vw - 1440px) / 2);
   height: 66px;
   padding: 0px 84px;
   color: #FFF;
@@ -169,6 +169,7 @@ const closeMenu = () => {
   .header {
     width: 100vw;
     padding: 24px 20px;
+    margin: 0 auto;
 
     &__logo {
       font-size: 18px;
