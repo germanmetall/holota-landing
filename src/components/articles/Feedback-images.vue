@@ -7,7 +7,7 @@
       <div class="card__heading">
         <img
           class="card__avatar"
-          src=""
+          src="@/assets/images/feedback-images-avatar-1.jpg"
           alt=""
         />
         Natalia Gorbacheva
@@ -26,7 +26,7 @@
       <div class="card__heading">
         <img
           class="card__avatar"
-          src=""
+          src="@/assets/images/feedback-images-avatar-2.jpg"
           alt=""
         />
         Anna
@@ -44,7 +44,7 @@
       <div class="card__heading">
         <img
           class="card__avatar"
-          src=""
+          src="@/assets/images/feedback-images-avatar-3.jpg"
           alt=""
         />
         Anzelika
@@ -62,7 +62,7 @@
       <div class="card__heading">
         <img
           class="card__avatar"
-          src=""
+          src="@/assets/images/feedback-images-avatar-4.jpg"
           alt=""
         />
         Anka Mart

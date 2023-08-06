@@ -26,14 +26,13 @@
 
     <div class="tariff tariff--video">
       <div class="tariff__heading">База + відео-фідбек</div>
-      <div class="tariff__underheading">*без зворотнього звʼязку</div>
 
       <div class="tariff__text">
         <ul>
           <li>Відео-уроки</li>
           <li>Завдання</li>
           <li>Доступ до матеріалів</li>
-          <br/>
+          <br />
           <li>Відео-фідбек 2 місяці</li>
         </ul>
       </div>
@@ -50,16 +49,15 @@
 
     <div class="tariff tariff--personal">
       <div class="tariff__heading">індивідуалка 2 місяці</div>
-      <div class="tariff__underheading">*без зворотнього звʼязку</div>
 
       <div class="tariff__text">
         <ul>
           <li>Відео-уроки</li>
           <li>Завдання</li>
           <li>Доступ до матеріалів</li>
-          <br/>
+          <br />
           <li>Відео-фідбек 2 місяці</li>
-          <br/>
+          <br />
           <li>Допомога з Резюме</li>
           <li>Допомога з Портфоліо</li>
           <li>Допомога з Співбесідами</li>
@@ -78,6 +76,15 @@
     </div>
 
     <div class="tariffs__under">*Кожні 3 місяці ціна зростає, тому встигни зараз, аби не прогавити момент.</div>
+    <div class="tariffs__crypto">
+      Можна оплатити <strong>криптовалютою</strong>, напишіть у підтримку за інструкцією.
+    </div>
+    <div class="tariffs__support">
+      <div class="btn btn--transparent">
+        підтримка
+        <Arrow />
+      </div>
+    </div>
   </article>
 </template>
 
@@ -107,7 +114,7 @@
     display: grid;
     grid-template-columns: repeat(3, 382px);
     justify-content: space-between;
-    width: calc(100% - 2 * 126px);
+    width: 1200px;
     max-width: 1200px;
     margin: 153px auto 137px;
 
@@ -149,6 +156,25 @@
       font-style: normal;
       font-weight: 300;
       line-height: 160%;
+    }
+
+    &__crypto {
+      grid-column: 2;
+      margin-top: 85px;
+      padding: 10px 30px;
+      border-radius: 110px;
+      background: #D19335;
+      color: #1B1B1B;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    &__support{
+      grid-column: 2;
+      text-align: center;
     }
   }
 
@@ -252,16 +278,16 @@
         margin-bottom: 50px;
       }
 
-      &__under{
+      &__under {
         margin-top: 78px;
       }
     }
 
-    &__price{
+    &__price {
       margin-top: 50px;
     }
 
-    &__btn{
+    &__btn {
       display: flex;
       justify-content: center;
       align-items: center;

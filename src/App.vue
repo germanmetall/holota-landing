@@ -30,6 +30,10 @@ import { RouterView } from 'vue-router';
   font-family: Unbounded;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;

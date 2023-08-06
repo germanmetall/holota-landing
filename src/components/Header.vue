@@ -107,7 +107,8 @@ const closeMenu = () => {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 1272px;
+  margin: 0 auto;
   height: 66px;
   padding: 0px 84px;
   color: #FFF;

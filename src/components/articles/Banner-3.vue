@@ -65,6 +65,7 @@ import Arrow from '@/components/Arrow.vue'
   }
 
   &__text {
+    max-width: 80%;
     margin-top: 20px;
     color: #FFF;
     font-size: 18px;

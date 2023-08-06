@@ -102,6 +102,7 @@ import Arrow from '@/components/Arrow.vue'
     }
 
     &__crypto {
+      margin-top: 85px;
       padding: 10px 30px;
       border-radius: 110px;
       background: #D19335;

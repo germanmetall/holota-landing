@@ -12,11 +12,11 @@
 
     <div class="hesitate__actions">
       <div class="btn">
-        Маю сумніви
+        Окей, стартуємо
         <Arrow />
       </div>
       <div class="btn btn--transparent">
-        Окей, стартуємо
+        Маю сумніви
         <Arrow />
       </div>
     </div>
