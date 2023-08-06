@@ -72,6 +72,7 @@ import Video from '@/components/Video.vue'
     margin: 0 auto 102px;
 
     &__block {
+      width: 191px;
       &--welcome {
         display: none;
       }

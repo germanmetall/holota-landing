@@ -20,10 +20,33 @@
       <Arrow style="margin-left: 10px;" />
     </div>
 
-    <div class="header__burger">Меню</div>
+    <div
+      class="header__burger"
+      @click="openMenu"
+    >Меню</div>
 
     <div class="menu">
+      <div
+        class="menu__close"
+        @click="closeMenu"
+      >Закрити</div>
 
+      <div class="menu__links">
+        <a
+          class="menu__link"
+          v-for="(link, counter) in links"
+          :class="{ 'menu__link--active': activeLink == counter }"
+          :href="`#${link.href}`"
+          @click="closeMenu(); activeLink = counter"
+        >
+          {{ link.name }}
+        </a>
+      </div>
+
+      <div class="menu__buy">
+        Придбати одразу
+        <Arrow style="margin-left: 10px; width: calc(18px); height: calc(18px);" />
+      </div>
     </div>
   </header>
 </template>
@@ -64,6 +87,15 @@ const
     }
   ]),
   activeLink = ref(0)
+
+const openMenu = () => {
+  document.body.style.overflow = 'hidden';
+  document.querySelector('.menu').classList.add('menu--toggled')
+}
+const closeMenu = () => {
+  document.body.style.overflow = 'auto';
+  document.querySelector('.menu').classList.remove('menu--toggled')
+}
 </script>
 
 <style lang="scss" scoped>
@@ -83,12 +115,14 @@ const
   backdrop-filter: blur(25px);
 
   &__logo {
+    position: relative;
     text-align: right;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     text-transform: uppercase;
+    z-index: 101;
   }
 
   &__link {
@@ -132,6 +166,11 @@ const
 
 @media screen and (max-width: 800px) {
   .header {
+    padding: 24px 20px;
+
+    &__logo {
+      font-size: 18px;
+    }
 
     &__links,
     &__buy {
@@ -150,6 +189,76 @@ const
       font-weight: 400;
       line-height: 120%;
       text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #131212;
+    z-index: 100;
+    padding-top: inherit;
+    transition: .3s;
+
+    &--toggled {
+      left: 0;
+    }
+
+    &__close {
+      top: 17px;
+      position: absolute;
+      padding: 10px;
+      right: 20px;
+      color: #FFF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    &__link {
+      &s {
+        margin-top: 97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+      }
+
+      color: #ffffff4d;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration: unset;
+      transition: .2s;
+
+      &--active {
+        color: #fff;
+      }
+    }
+
+    &__buy {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #EB4F3C;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-transform: uppercase;
+      margin: 100px auto;
     }
   }
 }

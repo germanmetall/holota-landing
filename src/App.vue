@@ -66,6 +66,7 @@ body {
   margin: 0;
   background: #1B1B1B;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .btn {

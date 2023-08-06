@@ -25,3 +25,17 @@ import { ref } from 'vue';
 
 const isVideoPlaying = ref(false)
 </script>
+
+<style lang="scss" scoped>
+.video{
+  &__video{
+    width: 100%;
+  }
+  &__control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+</style>
