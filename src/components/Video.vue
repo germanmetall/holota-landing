@@ -13,7 +13,7 @@
       class="video__control"
       @click="isVideoPlaying = !isVideoPlaying"
     >
-      <slot />
+      <div class="video__text" ref="videoText" ><slot/></div>
       <svg
         class="video__icon"
         v-if="!isVideoPlaying"
@@ -28,20 +28,47 @@
           fill="white"
         />
       </svg>
-      <img
+      <svg
         class="video__icon"
         v-else
-        src=""
-      />
+        xmlns="http://www.w3.org/2000/svg"
+        width="19"
+        height="18"
+        viewBox="0 0 19 18"
+        fill="none"
+      >
+        <path
+          d="M7.65 16.11V1.89C7.65 0.54 7.08 0 5.64 0H2.01C0.57 0 0 0.54 0 1.89V16.11C0 17.46 0.57 18 2.01 18H5.64C7.08 18 7.65 17.46 7.65 16.11ZM18.002 16.11V1.89C18.002 0.54 17.432 0 15.992 0H12.362C10.932 0 10.352 0.54 10.352 1.89V16.11C10.352 17.46 10.922 18 12.362 18H15.992C17.432 18 18.002 17.46 18.002 16.11Z"
+          fill="white"
+        />
+      </svg>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 
 const isVideoPlaying = ref(false),
-  inited = ref(false)
+  inited = ref(false),
+  videoText = ref()
+
+watch(isVideoPlaying, () => {
+  return;
+  console.log(videoText.value);
+  if(!isVideoPlaying.value) {
+    videoText.value.style.width = videoText.value.scrollWidth + 'px';
+    videoText.value.style.marginRight = 0;
+  }
+  else {
+    videoText.value.style.width = 0;
+    videoText.value.style.marginRight = '-20px';
+  }
+})
+
+onMounted(() => {
+  //videoText.value.style.width = videoText.value.scrollWidth + 'px';
+})
 </script>
 
 <style lang="scss" scoped>
@@ -80,6 +107,16 @@ const isVideoPlaying = ref(false),
     font-weight: 400;
     line-height: 120%;
     text-transform: uppercase;
+  }
+
+  &__text{
+    transition: .3s;
+    overflow: hidden;
+  }
+
+  &__icon{
+    width: 23px;
+    height: 23px;
   }
 }
 </style>

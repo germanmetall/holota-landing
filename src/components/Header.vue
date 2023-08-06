@@ -107,7 +107,7 @@ const closeMenu = () => {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1272px;
+  width: 1440px;
   margin: 0 auto;
   height: 66px;
   padding: 0px 84px;
@@ -167,6 +167,7 @@ const closeMenu = () => {
 
 @media screen and (max-width: 800px) {
   .header {
+    width: 100%;
     padding: 24px 20px;
 
     &__logo {
