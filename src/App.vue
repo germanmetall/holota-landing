@@ -51,6 +51,12 @@ body {
   margin-top: calc(66px + 50px);
 }
 
+@media screen and (max-width: 800px) {
+  .page {
+    margin-top: 66px;
+  }
+}
+
 .btn {
   padding: 40px;
   border-radius: 1000px;
