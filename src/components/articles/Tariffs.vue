@@ -26,7 +26,7 @@
 
     <div class="tariff tariff--video">
       <div class="tariff__heading">База + відео-фідбек</div>
-      <div class="tariff__underheading"></div>
+      <div class="tariff__underheading"> </div>
 
       <div class="tariff__text">
         <ul>
@@ -50,7 +50,7 @@
 
     <div class="tariff tariff--personal">
       <div class="tariff__heading">індивідуалка 2 місяці</div>
-      <div class="tariff__underheading"></div>
+      <div class="tariff__underheading"> </div>
 
       <div class="tariff__text">
         <ul>
@@ -191,6 +191,7 @@
   }
 
   &__underheading {
+    height: 1em;
     color: #ffffff4d;
     font-size: 16px;
     font-style: normal;

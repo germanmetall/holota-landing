@@ -107,10 +107,9 @@ const closeMenu = () => {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1440px;
-  margin: 0 calc((100vw - 1440px) / 2);
+  width: 100%;
   height: 66px;
-  padding: 0px 84px;
+  padding: 0px max(calc((100vw - 1440px) / 2 + 84px), 40px);
   color: #FFF;
   background: rgba(27, 27, 27, 0.10);
   backdrop-filter: blur(25px);
