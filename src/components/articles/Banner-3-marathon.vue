@@ -2,8 +2,7 @@
   <article class="banner">
     <div class="block">
       <div class="block__heading">Зворотній звʼязок</div>
-      <div class="block__text">Відсилай свою роботу та отримай фідбек в індивідуальному чаті, це може будти текстом, а
-        може бути відео</div>
+      <div class="block__text">Кожен день о 09:00 ранку тобі відкривається новий урок і завдання. Якщо ти робиш його у цей же день та відправляєш до 23:00 то я записую тобі на це завдання один видео-фідбек.</div>
       <div class="btn">
         Хочу на курс
         <Arrow />
@@ -18,7 +17,7 @@
           alt="loom"
         />
       </div>
-      <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити</div>
+      <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити.<br/><br/>І так 7 днів.</div>
       <div class="btn">
         приклад фідбеку
         <Arrow />
@@ -40,7 +39,7 @@ import Arrow from '@/components/Arrow.vue'
   height: 532px;
   padding: 40px 56px 54px 44px;
   background: lightgray 50%;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-bg.jpeg');
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-marathon-bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;

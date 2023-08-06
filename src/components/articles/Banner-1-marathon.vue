@@ -1,7 +1,7 @@
 <template>
   <article class="banner">
-    <h1 class="banner__h1">Курс "Мідл UX/UI дизайнер"</h1>
-    <h2 class="banner__h2">Як UX/UI або Product дизайнеру зробити мінімум х2 до свого доходу</h2>
+    <h1 class="banner__h1">Марафон "Пекельний тиждень"</h1>
+    <h2 class="banner__h2">Зроби свої перші результати за 7 днів</h2>
 
     <div class="banner__actions">
       <div class="btn">
@@ -9,16 +9,16 @@
         <Arrow />
       </div>
       <div class="btn btn--transparent">
-        Маю сумніви
+        Дізнатись більше
         <Arrow />
       </div>
     </div>
 
     <div class="banner__text">
       <ul>
-        <li>без сильних знань англійської</li>
-        <li>навіть якщо думаєш, що роботи немає</li>
-        <li>та навіть якщо не віриш в себе</li>
+        <li>7 днів практики</li>
+        <li>Зробиш свої перші роботи в дизайні</li>
+        <li>Кожен день зворотній звʼязок</li>
       </ul>
     </div>
   </article>
@@ -39,8 +39,8 @@ import Arrow from '@/components/Arrow.vue'
   padding: 40px 56px 54px 44px;
   margin: 0 auto;
   border-radius: 40px;
-  background: lightgray 50%;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-bg.jpeg');
+  background: lightgray 50%;border-radius: 40px;
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-marathon-bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 
