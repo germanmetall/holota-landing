@@ -46,8 +46,14 @@ import Video from '@/components/Video.vue'
   margin: 120px auto 170px;
 
   &__block {
+    display: flex;
+    align-items: center;
     width: 100%;
     aspect-ratio: 1/1.25;
+
+    &:deep(>div){
+      width: 100%;
+    }
 
     &--welcome {
       width: calc(100% - 4px);

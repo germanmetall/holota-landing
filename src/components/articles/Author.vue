@@ -88,10 +88,14 @@ import Video from '@/components/Video.vue'
     grid-row: 1 / span 4;
     order: 0;
 
+    &:deep(>div){
+      padding-top: 130% !important;
+    }
     &:deep(iframe) {
       width: calc(100% + 2 * 359px) !important;
       height: 100% !important;
       left: -359px !important;
+      scale: 1.4;
     }
   }
 }
