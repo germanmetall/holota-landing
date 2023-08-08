@@ -1,38 +1,17 @@
 <template>
   <div class="video">
     <iframe
-      :width="sizes[0] || 560"
-      :height="sizes[1] || 560"
-      :src="`${props.src}?controls=1`"
+      :src="`${props.src || 'https://www.youtube.com/embed/H5aYFToQZKM'}?controls=0`"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       class="video__video"
-      v-if="inited"
     ></iframe>
-
-    <img
-      class="video__thumbnail"
-      src="@/assets/images/video-thumbnail-1.jpeg"
-      @click="init"
-      v-else
-    />
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-
 let props = defineProps(['src'])
-
-const inited = ref(false),
-  sizes = ref([])
-
-const init = () => {
-  let rect = document.querySelector('.video__thumbnail').getClientRects()[0]
-  sizes.value = [rect.width, rect.height]
-  inited.value = true
-}
 </script>
 
 <style lang="scss" scoped>
@@ -42,6 +21,8 @@ const init = () => {
   overflow: hidden;
 
   &__video{
+    width: 100%;
+    height: 100%;
     border-radius: inherit;
   }
 
