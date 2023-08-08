@@ -23,8 +23,7 @@
 
     <Video
       class="author__video"
-      :src="'https://www.youtube.com/embed/H5aYFToQZKM'"
-      :width="180"
+      :src="'https://player.vimeo.com/video/852674221?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
     >Хай, го знайомитись</Video>
   </article>
 </template>
@@ -116,7 +115,7 @@ import Video from '@/components/Video.vue'
     }
 
     &__video {
-      margin-top: 70px;
+      margin: 70px 64px 0;
     }
   }
 }

@@ -1,12 +1,13 @@
 <template>
   <div class="video">
-    <iframe
-      :src="`${props.src || 'https://www.youtube.com/embed/H5aYFToQZKM'}?controls=0`"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      class="video__video"
-    ></iframe>
+    <div style="padding:177.78% 0 0 0;position:relative;">
+      <iframe
+        :src="props.src"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+      ></iframe>
+    </div>
   </div>
 </template>
 
@@ -20,7 +21,7 @@ let props = defineProps(['src'])
   border-radius: 40px;
   overflow: hidden;
 
-  &__video{
+  &__video {
     width: 100%;
     height: 100%;
     border-radius: inherit;

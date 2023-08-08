@@ -1,7 +1,13 @@
 <template>
   <article class="feedback-videos">
-    <Video class="feedback-videos__block" :width="127">Відгук від Наді</Video>
-    <Video class="feedback-videos__block" :width="127">Відгук від Наді</Video>
+    <Video
+      class="feedback-videos__block"
+      :src="'https://player.vimeo.com/video/852670061?h=0b1aaa3a07&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
+    >Відгук від Наді</Video>
+    <Video
+      class="feedback-videos__block"
+      :src="'https://player.vimeo.com/video/852670273?h=290a15194d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
+    >Відгук від Наді</Video>
     <div class="feedback-videos__block feedback-videos__block--welcome">
       <svg
         width="50"
@@ -78,5 +84,4 @@ import Video from '@/components/Video.vue'
       }
     }
   }
-}
-</style>
+}</style>
