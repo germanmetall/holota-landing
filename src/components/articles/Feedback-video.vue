@@ -50,6 +50,7 @@ import Video from '@/components/Video.vue'
     aspect-ratio: 1/1.25;
 
     &--welcome {
+      width: calc(100% - 4px);
       display: flex;
       flex-direction: column;
       justify-content: center;

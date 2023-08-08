@@ -21,7 +21,7 @@
       <div class="tariff__hrn">~ 5 570 грн</div>
 
       <div class="tariff__btn">Стартуємо Базу</div>
-      <div class="tariff__btn">Частинами $50 / місяць</div>
+      <div class="tariff__btn tariff__btn--hidden">Частинами $50 / місяць</div>
     </div>
 
     <div class="tariff tariff--video">
@@ -45,7 +45,7 @@
       <div class="tariff__hrn">~ 11 140 грн</div>
 
       <div class="tariff__btn">Стартуємо з Фідбеком</div>
-      <div class="tariff__btn">Частинами $100 / місяць</div>
+      <div class="tariff__btn tariff__btn--hidden">Частинами $100 / місяць</div>
     </div>
 
     <div class="tariff tariff--personal">
@@ -74,7 +74,7 @@
       <div class="tariff__hrn">~ 37 150 грн</div>
 
       <div class="tariff__btn">Стартуємо Індивідуалку</div>
-      <div class="tariff__btn">Частинами $250 / місяць</div>
+      <div class="tariff__btn tariff__btn--hidden">Частинами $250 / місяць</div>
     </div>
 
     <div class="tariffs__under">*Кожні 3 місяці ціна зростає, тому встигни зараз, аби не прогавити момент.</div>
@@ -175,7 +175,7 @@
       line-height: 150%;
     }
 
-    &__support{
+    &__support {
       grid-column: 2;
       text-align: center;
     }
@@ -261,6 +261,10 @@
     font-weight: 300;
     line-height: 160%;
     cursor: pointer;
+
+    &--hidden {
+      display: none !important;
+    }
   }
 }
 
