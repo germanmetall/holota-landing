@@ -266,24 +266,29 @@
 
 #card- {
   &1 {
+    scale: 1.5;
     width: 500px;
     left: 0px;
     top: 0;
   }
 
   &2 {
+    rotate: 9.86925deg;
+    scale: 1.75;
     width: 500px;
     right: 90px;
     top: 140px;
   }
 
   &3 {
+    scale: 1.35;
     width: 452px;
-    left: 40px;
+    left: 60px;
     top: 500px;
   }
 
   &4 {
+    scale: 1.3;
     width: 435px;
     right: 80px;
     top: 550px;
@@ -297,23 +302,29 @@
   }
 
   #card {
-    &-1{
+    &-1 {
+      scale: 1;
       width: initial;
       left: -20px;
     }
+
     &-2 {
+      scale: 1;
+      rotate: unset;
       width: initial;
       right: -16px;
       top: 140px;
     }
 
     &-3 {
+      scale: 1;
       width: initial;
       left: -12px;
       top: 320px;
     }
 
     &-4 {
+      scale: 1;
       width: initial;
       right: -31px;
       top: 510px;
