@@ -23,6 +23,7 @@
 
     <Video
       class="author__video"
+      :src="'https://www.youtube.com/embed/H5aYFToQZKM'"
       :width="180"
     >Хай, го знайомитись</Video>
   </article>
