@@ -11,30 +11,28 @@ import 'lazysizes';
 import Header from '@/components/Header.vue';
 import { RouterView } from 'vue-router';
 import Footer from '@/components/Footer.vue';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const UnboundedLight = new FontFace("Unbounded", "url(./fonts/Unbounded-Light.ttf)", {
+    weight: 300,
+    display: 'swap'
+  })
+  const UnboundedRegular = new FontFace("Unbounded", "url(./fonts/Unbounded-Regular.ttf)", {
+    weight: 400,
+    display: 'swap'
+  })
+  const UnboundedMedium = new FontFace("Unbounded", "url(./fonts/Unbounded-Medium.ttf)", {
+    weight: 500,
+    display: 'swap'
+  })
+  document.fonts.add(UnboundedLight);
+  document.fonts.add(UnboundedRegular);
+  document.fonts.add(UnboundedMedium);  
+})
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: Unbounded;
-  src: url("@/assets/fonts/Unbounded-Light.ttf");
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Unbounded;
-  src: url("@/assets/fonts/Unbounded-Regular.ttf");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Unbounded;
-  src: url("@/assets/fonts/Unbounded-Medium.ttf");
-  font-weight: 500;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
   font-family: Unbounded;

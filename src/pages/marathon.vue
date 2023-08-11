@@ -1,19 +1,19 @@
 <template>
-  <Banner1Marathon />
+  <Banner1Marathon id="course" />
   <Text>
     Практичний марафон з дизайну, якщо зовсім немає досвіду, але хочеш змінити професію та збільшити заробіток
   </Text>
   <Banner2Marathon />
-  <Author />
-  <LessonMarathon />
+  <Author id="author" />
+  <LessonMarathon id="lesson" />
   <Banner3Marathon />
-  <ProgramMarathon />
-  <MotivationMarathon />
+  <ProgramMarathon id="program" />
+  <MotivationMarathon id="audience" />
   <Btn />
-  <FeedbackImages />
+  <FeedbackImages id="feedback" />
   <FeedbackVideo />
   <Text style="margin: 0 auto;">Починай вчитися одразу після оплати, у тебе буде доступ до бота та матеріалів</Text>
-  <TariffsMarathon />
+  <TariffsMarathon id="tariffs" />
   <Hesitate />
 </template>
 
