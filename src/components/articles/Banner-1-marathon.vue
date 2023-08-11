@@ -4,14 +4,14 @@
     <h2 class="banner__h2">Зроби свої перші результати за 7 днів</h2>
 
     <div class="banner__actions">
-      <div class="btn">
+      <a class="btn" href="#tariffs">
         Придбати одразу
         <Arrow />
-      </div>
-      <div class="btn btn--transparent">
+      </a>
+      <a class="btn btn--transparent" href="#lesson">
         Дізнатись більше
         <Arrow />
-      </div>
+      </a>
     </div>
 
     <div class="banner__text">
@@ -40,7 +40,7 @@ import Arrow from '@/components/Arrow.vue'
   margin: 0 auto;
   border-radius: 40px;
   background: lightgray 50%;border-radius: 40px;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-marathon-bg.jpeg');
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-marathon-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
 

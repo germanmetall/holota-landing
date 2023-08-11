@@ -8,8 +8,8 @@
       </div>
       <div class="block">
         <div class="block__heading">Курси</div>
-        <div class="block__text">Марафон "Пекельна неділя"</div>
-        <div class="block__text">Курс "Мідл UX/UI дизайнер"</div>
+        <a class="block__text" href="/marathon">Марафон "Пекельна неділя"</a>
+        <a class="block__text" href="/">Курс "Мідл UX/UI дизайнер"</a>
       </div>
       <div class="block">
         <div class="block__heading">Контакти</div>
@@ -17,14 +17,14 @@
           href="mailto:info@moveitacademy.com"
           class="block__text"
         >info@moveitacademy.com</a>
-        <div class="block__button">
+        <a class="block__button">
           Маю сумніви
           <Arrow style="margin-left: 10px; width: calc(8px * 1.25); height: calc(8px * 1.25);" />
-        </div>
-        <div class="block__button block__button--color">
+        </a>
+        <a class="block__button block__button--color" href="#tariffs">
           Придбати одразу
           <Arrow style="margin-left: 10px; width: calc(8px * 1.25); height: calc(8px * 1.25);" />
-        </div>
+        </a>
       </div>
     </div>
     <div class="footer__bottom">
@@ -50,7 +50,7 @@ import Arrow from '@/components/Arrow.vue'
   padding-bottom: 38px;
   border-radius: 40px;
   background: lightgray 50%;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('@/assets/images/footer-bg.jpeg');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('@/assets/images/footer-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
 

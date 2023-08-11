@@ -1,8 +1,8 @@
 <template>
-  <article class="btn">
+  <a class="btn" href="#tariffs">
     Холі щіт, скоріше хочу на курс
     <Arrow/>
-  </article>
+  </a>
 </template>
 
 <script setup>
@@ -11,6 +11,7 @@ import Arrow from '@/components/Arrow.vue'
 
 <style lang="scss" scoped>
 .btn{
+  display: block;
   width: fit-content;
   margin: 96px auto 135px;
   svg {

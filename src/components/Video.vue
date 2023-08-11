@@ -2,7 +2,10 @@
   <div class="video">
     <div style="padding:177.78% 0 0 0;position:relative;">
       <iframe
-        :src="props.src"
+        :title="`video ${props.id}`"
+        class="lazyload"
+        :id="props.id"
+        :data-src="props.url"
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         style="position:absolute;top:0;left:0;width:100%;height:100%;"
@@ -12,7 +15,20 @@
 </template>
 
 <script setup>
-let props = defineProps(['src'])
+import { usePlayerStore } from '@/stores/player'
+import { onMounted } from 'vue';
+
+const props = defineProps(['url', 'id'])
+const store = usePlayerStore()
+
+onMounted(() => {
+  let iframe = document.querySelector(`#${props.id}`)
+  iframe.addEventListener('lazyloaded', () => {
+    iframe.src = iframe.getAttribute('data-src');
+    iframe.setAttribute('data-src', null);
+    store.addPlayer(props.id)
+  })
+})
 </script>
 
 <style lang="scss" scoped>
@@ -22,6 +38,8 @@ let props = defineProps(['src'])
   overflow: hidden;
 
   &__video {
+    position: relative;
+    padding-top: unset !important;
     width: 100%;
     height: 100%;
     border-radius: inherit;
@@ -30,7 +48,7 @@ let props = defineProps(['src'])
   &__thumbnail {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    urlect-fit: cover;
     cursor: pointer;
   }
 }

@@ -17,6 +17,7 @@
     <img
       class="lesson__img"
       src="@/assets/images/lesson-structure-marathon.svg"
+      alt="lesson structure"
       loading="lazy"
     />
   </article>

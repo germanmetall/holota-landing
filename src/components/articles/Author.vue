@@ -23,7 +23,8 @@
 
     <Video
       class="author__video"
-      :src="'https://player.vimeo.com/video/852674221?h=de988bf8e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
+      :id="'author-1'"
+      :url="'https://player.vimeo.com/video/852674221?h=de988bf8e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
     >Хай, го знайомитись</Video>
   </article>
 </template>
@@ -95,7 +96,7 @@ import Video from '@/components/Video.vue'
       width: calc(100% + 2 * 359px) !important;
       height: 100% !important;
       left: -359px !important;
-      scale: 1.4;
+      scale: 1.6;
     }
   }
 }

@@ -4,10 +4,13 @@
       <div class="block__heading">Зворотній звʼязок</div>
       <div class="block__text">Відсилай свою роботу та отримай фідбек в індивідуальному чаті, це може будти текстом, а
         може бути відео</div>
-      <div class="btn">
+      <a
+        class="btn"
+        href="#tariffs"
+      >
         Хочу на курс
         <Arrow />
-      </div>
+      </a>
     </div>
     <div class="block">
       <div class="block__heading block__heading--loom">
@@ -15,7 +18,8 @@
         <img
           class="block__loom"
           src="@/assets/images/loom.png"
-          alt="loom"
+          alt="loom icon"
+          loading="lazy"
         />
       </div>
       <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити</div>
@@ -40,7 +44,7 @@ import Arrow from '@/components/Arrow.vue'
   height: 532px;
   padding: 40px 56px 54px 44px;
   background: lightgray 50%;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-bg.jpeg');
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
@@ -99,7 +103,8 @@ import Arrow from '@/components/Arrow.vue'
   .block {
     &__heading {
       font-size: 34px;
-      &--loom{
+
+      &--loom {
         display: flex;
         flex-direction: column-reverse;
       }
@@ -110,7 +115,7 @@ import Arrow from '@/components/Arrow.vue'
       font-size: 16px;
     }
 
-    &__loom{
+    &__loom {
       margin-right: auto;
     }
 
@@ -120,5 +125,4 @@ import Arrow from '@/components/Arrow.vue'
       margin: 50px auto 0;
     }
   }
-}
-</style>
+}</style>

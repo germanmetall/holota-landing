@@ -21,7 +21,7 @@
         </ul>
         <a
           class="block__link"
-          href=""
+          href="/marathon"
         >
           я новачок, їду дивитись
           <Arrow style="width: 15px; height: 15px; margin-left: 20px;" />

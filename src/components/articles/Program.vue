@@ -11,6 +11,8 @@
       >
         <div class="module__name">
           <img
+            alt="figma icon"
+            loading="lazy"
             v-if="item.isFigma"
             style="width: 27px; height: 27px; padding: 4px 5px 3px 5px; border-radius: 50%; background: rgba(255, 255, 255, 0.10);"
             src="@/assets/images/figma.jpg"
@@ -43,6 +45,8 @@
       >
         <div class="module__name">
           <img
+            alt="loom icon"
+            loading="lazy"
             v-if="item.isLoom"
             style="width: 27px; height: 27px; border-radius: 50%;"
             src="@/assets/images/loom.png"
@@ -320,11 +324,12 @@ const structure = ref({
     display: flex;
     flex-direction: column;
 
-    &--video, &--personal{
+    &--video,
+    &--personal {
       height: unset !important;
     }
 
-    &__name{
+    &__name {
       gap: 20px;
     }
 

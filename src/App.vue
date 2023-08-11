@@ -7,6 +7,7 @@
 </template>
 
 <script setup>
+import 'lazysizes';
 import Header from '@/components/Header.vue';
 import { RouterView } from 'vue-router';
 import Footer from '@/components/Footer.vue';
@@ -17,30 +18,42 @@ import Footer from '@/components/Footer.vue';
   font-family: Unbounded;
   src: url("@/assets/fonts/Unbounded-Light.ttf");
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Unbounded;
   src: url("@/assets/fonts/Unbounded-Regular.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Unbounded;
   src: url("@/assets/fonts/Unbounded-Medium.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 
 * {
   box-sizing: border-box;
   font-family: Unbounded;
+  scroll-margin-top: 100px;
+}
+
+a {
+  display: block;
+  text-decoration: unset;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
   margin: 0;
   background: #1B1B1B;
-  scroll-behavior: smooth;
 }
 
 #app {

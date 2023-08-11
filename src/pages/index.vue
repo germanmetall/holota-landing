@@ -1,19 +1,19 @@
 <template>
-  <Banner1 />
+  <Banner1 id="course" />
   <Text>
     Практичний курс дизайну якщо є трохи досвіду, але відчуваєш що чогось бракує щоб зробити х2
   </Text>
   <Banner2 />
-  <Author />
-  <Lesson />
+  <Author id="author" />
+  <Lesson id="lesson" />
   <Banner3 />
-  <Program />
-  <Motivation />
+  <Program id="program" />
+  <Motivation id="audience" />
   <Btn />
-  <FeedbackImages />
+  <FeedbackImages id="feedback" />
   <FeedbackVideo />
   <Text style="margin: 0 auto;">Починай вчитися одразу після оплати, у тебе буде доступ до бота та матеріалів</Text>
-  <Tariffs />
+  <Tariffs id="tariffs" />
   <Hesitate />
 </template>
 

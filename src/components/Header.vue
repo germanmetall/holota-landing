@@ -15,10 +15,10 @@
       </a>
     </div>
 
-    <div class="header__buy">
+    <a class="header__buy" href="#tariffs">
       Придбати одразу
       <Arrow style="margin-left: 10px;" />
-    </div>
+    </a>
 
     <div
       class="header__burger"
@@ -43,10 +43,10 @@
         </a>
       </div>
 
-      <div class="menu__buy">
+      <a class="menu__buy" href="#tariffs">
         Придбати одразу
         <Arrow style="margin-left: 10px; width: calc(18px); height: calc(18px);" />
-      </div>
+      </a>
     </div>
   </header>
 </template>
@@ -59,27 +59,27 @@ const
   links = ref([
     {
       name: 'Про курс',
-      href: 'about'
+      href: 'course'
     },
     {
       name: 'Автор',
       href: 'author'
     },
     {
+      name: 'Про процес',
+      href: 'lesson'
+    },
+    {
       name: 'Програма',
       href: 'program'
     },
     {
-      name: 'Про процес',
-      href: 'about'
+      name: 'Для кого',
+      href: 'audience'
     },
     {
       name: 'Відгуки',
       href: 'feedback'
-    },
-    {
-      name: 'Для кого',
-      href: 'audience'
     },
     {
       name: 'Тарифи',

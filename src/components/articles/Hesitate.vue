@@ -11,10 +11,10 @@
     </div>
 
     <div class="hesitate__actions">
-      <div class="btn">
+      <a class="btn" href="#tariffs">
         Окей, стартуємо
         <Arrow />
-      </div>
+      </a>
       <div class="btn btn--transparent">
         Маю сумніви
         <Arrow />
@@ -23,8 +23,9 @@
 
     <img
       class="hesitate__img"
-      src="@/assets/images/hesitate.png"
-      alt=""
+      src="@/assets/images/hesitate.webp"
+      alt="author portrait with motivating facial expression"
+      loading="lazy"
     />
   </article>
 </template>

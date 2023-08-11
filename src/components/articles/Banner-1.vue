@@ -4,10 +4,13 @@
     <h2 class="banner__h2">Як UX/UI або Product дизайнеру зробити мінімум х2 до свого доходу</h2>
 
     <div class="banner__actions">
-      <div class="btn">
+      <a
+        class="btn"
+        href="#tariffs"
+      >
         Придбати одразу
         <Arrow />
-      </div>
+      </a>
       <div class="btn btn--transparent">
         Маю сумніви
         <Arrow />
@@ -40,7 +43,7 @@ import Arrow from '@/components/Arrow.vue'
   margin: 0 auto;
   border-radius: 40px;
   background: lightgray 50%;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-bg.jpeg');
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-1-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -116,5 +119,4 @@ import Arrow from '@/components/Arrow.vue'
       text-align: center;
     }
   }
-}
-</style>
+}</style>

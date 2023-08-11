@@ -90,6 +90,10 @@
   </article>
 </template>
 
+<script setup>
+import Arrow from '@/components/Arrow.vue'
+</script>
+
 <style lang="scss" scoped>
 .tariff {
   position: relative;

@@ -2,11 +2,15 @@
   <article class="banner">
     <div class="block">
       <div class="block__heading">Зворотній звʼязок</div>
-      <div class="block__text">Кожен день о 09:00 ранку тобі відкривається новий урок і завдання. Якщо ти робиш його у цей же день та відправляєш до 23:00 то я записую тобі на це завдання один видео-фідбек.</div>
-      <div class="btn">
+      <div class="block__text">Кожен день о 09:00 ранку тобі відкривається новий урок і завдання. Якщо ти робиш його у цей
+        же день та відправляєш до 23:00 то я записую тобі на це завдання один видео-фідбек.</div>
+      <a
+        class="btn"
+        href="#tariffs"
+      >
         Хочу на курс
         <Arrow />
-      </div>
+      </a>
     </div>
     <div class="block">
       <div class="block__heading block__heading--loom">
@@ -14,10 +18,12 @@
         <img
           class="block__loom"
           src="@/assets/images/loom.png"
-          alt="loom"
+          alt="loom icon"
+          loading="lazy"
         />
       </div>
-      <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити.<br/><br/>І так 7 днів.</div>
+      <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити.<br /><br />І
+        так 7 днів.</div>
       <div class="btn">
         приклад фідбеку
         <Arrow />
@@ -39,7 +45,7 @@ import Arrow from '@/components/Arrow.vue'
   height: 532px;
   padding: 40px 56px 54px 44px;
   background: lightgray 50%;
-  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-marathon-bg.jpeg');
+  background-image: linear-gradient(135deg, #19093380 0%, #0C041980 100%), url('@/assets/images/banner-3-marathon-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
@@ -98,7 +104,8 @@ import Arrow from '@/components/Arrow.vue'
   .block {
     &__heading {
       font-size: 34px;
-      &--loom{
+
+      &--loom {
         display: flex;
         flex-direction: column-reverse;
       }
@@ -109,7 +116,7 @@ import Arrow from '@/components/Arrow.vue'
       font-size: 16px;
     }
 
-    &__loom{
+    &__loom {
       margin-right: auto;
     }
 
@@ -119,5 +126,4 @@ import Arrow from '@/components/Arrow.vue'
       margin: 50px auto 0;
     }
   }
-}
-</style>
+}</style>

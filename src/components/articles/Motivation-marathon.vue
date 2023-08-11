@@ -21,7 +21,7 @@
         </ul>
         <a
           class="block__link"
-          href=""
+          href="/"
         >
           погнали наступний рівень
           <Arrow style="width: 15px; height: 15px; margin-left: 20px;" />
