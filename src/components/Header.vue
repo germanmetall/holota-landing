@@ -10,12 +10,16 @@
         v-for="(link, counter) in links"
         :class="{ 'header__link--active': activeLink == counter }"
         :href="`#${link.href}`"
+        @click="activeLink = counter"
       >
         {{ link.name }}
       </a>
     </div>
 
-    <a class="header__buy" href="#tariffs">
+    <a
+      class="header__buy"
+      href="#tariffs"
+    >
       Придбати одразу
       <Arrow style="margin-left: 10px;" />
     </a>
@@ -43,7 +47,10 @@
         </a>
       </div>
 
-      <a class="menu__buy" href="#tariffs">
+      <a
+        class="menu__buy"
+        href="#tariffs"
+      >
         Придбати одразу
         <Arrow style="margin-left: 10px; width: calc(18px); height: calc(18px);" />
       </a>
@@ -53,6 +60,7 @@
 
 <script setup>
 import Arrow from '@/components/Arrow.vue'
+import { onMounted } from 'vue';
 import { ref } from 'vue';
 
 const
@@ -96,6 +104,22 @@ const closeMenu = () => {
   document.body.parentElement.style.overflow = 'auto';
   document.querySelector('.menu').classList.remove('menu--toggled')
 }
+
+onMounted(() => {
+  document.addEventListener('DOMContentLoaded', () => {
+    let elems = []
+    links.value.map(link => {
+      elems.push(document.querySelector(`#${link.href}`))
+    })
+    console.log(elems)
+    document.addEventListener('scroll', (e) => {
+      activeLink.value = 0
+      while (activeLink.value+1 < elems.length && document.scrollingElement.scrollTop > elems[activeLink.value+1].offsetTop - 100) {
+        activeLink.value++;
+      }
+    })
+  })
+})
 </script>
 
 <style lang="scss" scoped>

@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, nextTick } from 'vue'
 import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import index from './pages/index.vue'
@@ -6,8 +6,8 @@ import marathon from './pages/marathon.vue'
 import { createPinia } from 'pinia'
 
 const routes = [
-  { path: '/', component: index },
-  { path: '/marathon', component: marathon },
+  { path: '/', component: index, meta: { title: 'Курс "Мідл UX/UI дизайнер"' } },
+  { path: '/marathon', component: marathon, meta: { title: 'Марафон "Пекельний тиждень"' } },
 ]
 
 // 3. Create the router instance and pass the `routes` option
@@ -18,5 +18,11 @@ const router = createRouter({
   history: createWebHistory(),
   routes, // short for `routes: routes`
 })
+
+router.afterEach((to, from) => {
+  nextTick(() => {
+    document.title = to.meta.title || DEFAULT_TITLE;
+  });
+});
 
 createApp(App).use(createPinia()).use(router).mount('#app')
