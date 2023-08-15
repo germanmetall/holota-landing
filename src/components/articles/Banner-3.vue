@@ -2,8 +2,7 @@
   <article class="banner">
     <div class="block">
       <div class="block__heading">Зворотній звʼязок</div>
-      <div class="block__text">Відсилай свою роботу та отримай фідбек в індивідуальному чаті, це може будти текстом, а
-        може бути відео</div>
+      <div class="block__text">Відсилай свою роботу та отримай фідбек в індивідуальному чаті. Це може бути текстом або відео.</div>
       <a
         class="btn"
         href="#tariffs"
@@ -22,20 +21,77 @@
           loading="lazy"
         />
       </div>
-      <div class="block__text">Я записую видео-фидбек, де розповідаю про твої помилки, та як їх виправити</div>
-      <div class="btn">
+      <div class="block__text">Я записую відео-фідбек, де розповідаю про твої помилки і розповідаю як їх виправити.</div>
+      <div
+        class="btn"
+        @click="isPopupToggled = true"
+      >
         приклад фідбеку
         <Arrow />
       </div>
     </div>
   </article>
+
+  <div
+    class="popup__wrapper"
+    :class="{ 'popup__wrapper--active': isPopupToggled }"
+    @click="isPopupToggled = false"
+  >
+    <div class="popup" @click.stop>
+      <div style="position: relative; padding-bottom: 64.86486486486486%; height: 0;"><iframe src="https://www.loom.com/embed/dcd716a5bc584d72b0b435c9f2d1eb07?sid=ac0d1719-fbb4-49df-97bb-b721ee76a95a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import Arrow from '@/components/Arrow.vue'
+import { watch } from 'vue';
+import { ref } from 'vue';
+
+let isPopupToggled = ref(false)
+
+watch(isPopupToggled, () => {
+  document.body.classList.toggle('no-scroll')
+})
 </script>
 
 <style lang="scss" scoped>
+.popup {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  scale: 0;
+  transition: inherit;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    pointer-events: none;
+    background-color: #00000000;
+    transition: .5s;
+    cursor: pointer;
+    overflow: hidden;
+
+    &--active {
+      z-index: 10000;
+      pointer-events: all;
+      background-color: #000000b0;
+
+      .popup {
+        scale: 1;
+      }
+    }
+  }
+}
+
 .banner {
   display: flex;
   flex-direction: row;

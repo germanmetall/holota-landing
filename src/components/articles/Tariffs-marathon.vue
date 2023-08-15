@@ -17,7 +17,7 @@
       </div>
       <div class="tariff__hrn">~ 2 217 грн</div>
 
-      <div class="tariff__btn">Стартуємо Пекельний тиждень</div>
+      <a class="tariff__btn" href="https://t.me/moveit_academy_bot?start=Di6PMjV362OJRVXJ" target="_blank">Стартуємо Пекельний тиждень</a>
     </div>
 
     <div class="tariffs__under">*Кожні 3 місяці ціна зростає, тому встигни зараз, аби не прогавити момент.</div>
@@ -26,10 +26,10 @@
       Можна оплатити <strong>криптовалютою</strong>, напишіть у підтримку за інструкцією.
     </div>
     <div class="tariffs__support">
-      <div class="btn btn--transparent">
+      <a class="btn btn--transparent" href="https://t.me/moveit_support_bot?start=V0UCCb6zyKWhpnqH" target="_blank">
         підтримка
         <Arrow />
-      </div>
+      </a>
     </div>
   </article>
 </template>

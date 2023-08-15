@@ -10,7 +10,7 @@
       :id="'feedback-2'"
       :url="'https://player.vimeo.com/video/852670273?h=290a15194d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'"
     >Відгук від Наді</Video>
-    <div class="feedback-videos__block feedback-videos__block--welcome">
+    <a class="feedback-videos__block feedback-videos__block--welcome" href="#tariffs">
       <svg
         width="50"
         height="50"
@@ -30,7 +30,7 @@
       </svg>
 
       Велком до нас!
-    </div>
+    </a>
   </article>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <header class="header">
-    <div class="header__logo">
+    <a class="header__logo" href="#">
       Move IT
-    </div>
+    </a>
 
     <div class="header__links">
       <a
@@ -114,7 +114,7 @@ onMounted(() => {
     console.log(elems)
     document.addEventListener('scroll', (e) => {
       activeLink.value = 0
-      while (activeLink.value+1 < elems.length && document.scrollingElement.scrollTop > elems[activeLink.value+1].offsetTop - 100) {
+      while (activeLink.value+1 < elems.length && document.scrollingElement.scrollTop > elems[activeLink.value+1].offsetTop - 150) {
         activeLink.value++;
       }
     })
@@ -147,6 +147,7 @@ onMounted(() => {
     line-height: 120%;
     text-transform: uppercase;
     z-index: 101;
+    color: #fff;
   }
 
   &__link {

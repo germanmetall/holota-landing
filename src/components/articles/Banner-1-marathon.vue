@@ -1,7 +1,7 @@
 <template>
   <article class="banner">
     <h1 class="banner__h1">Марафон "Пекельний тиждень"</h1>
-    <h2 class="banner__h2">Зроби свої перші результати за 7 днів</h2>
+    <h2 class="banner__h2">Твій впевнений старт в професії за 7 днів</h2>
 
     <div class="banner__actions">
       <a class="btn" href="#tariffs">

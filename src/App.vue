@@ -52,6 +52,9 @@ body {
   padding: 0;
   margin: 0;
   background: #1B1B1B;
+  &.no-scroll{
+    overflow: hidden;
+  }
 }
 
 #app {

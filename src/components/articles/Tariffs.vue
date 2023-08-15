@@ -20,7 +20,7 @@
       </div>
       <div class="tariff__hrn">~ 5 570 грн</div>
 
-      <div class="tariff__btn">Стартуємо Базу</div>
+      <a class="tariff__btn" href="https://t.me/moveit_academy_bot?start=X8TqxA9nYKAj5Z9G" target="_blank">Стартуємо Базу</a>
       <div class="tariff__btn tariff__btn--hidden">Частинами $50 / місяць</div>
     </div>
 
@@ -44,7 +44,7 @@
       </div>
       <div class="tariff__hrn">~ 11 140 грн</div>
 
-      <div class="tariff__btn">Стартуємо з Фідбеком</div>
+      <a class="tariff__btn" href="https://t.me/moveit_academy_bot?start=Ri7ibNS1u43cY6jV" target="_blank">Стартуємо з Фідбеком</a>
       <div class="tariff__btn tariff__btn--hidden">Частинами $100 / місяць</div>
     </div>
 
@@ -73,7 +73,7 @@
       </div>
       <div class="tariff__hrn">~ 37 150 грн</div>
 
-      <div class="tariff__btn">Стартуємо Індивідуалку</div>
+      <a class="tariff__btn" href="https://t.me/moveit_academy_bot?start=64asJNFmAbqvs9VV" target="_blank">Стартуємо Індивідуалку</a>
       <div class="tariff__btn tariff__btn--hidden">Частинами $250 / місяць</div>
     </div>
 
@@ -82,10 +82,10 @@
       Можна оплатити <strong>криптовалютою</strong>, напишіть у підтримку за інструкцією.
     </div>
     <div class="tariffs__support">
-      <div class="btn btn--transparent">
+      <a class="btn btn--transparent" href="https://t.me/moveit_support_bot?start=V0UCCb6zyKWhpnqH" target="_blank">
         підтримка
         <Arrow />
-      </div>
+      </a>
     </div>
   </article>
 </template>

@@ -8,20 +8,25 @@
       </div>
       <div class="block">
         <div class="block__heading">Курси</div>
-        <a class="block__text" href="/marathon">Марафон "Пекельна неділя"</a>
-        <a class="block__text" href="/">Курс "Мідл UX/UI дизайнер"</a>
+        <a
+          class="block__text"
+          href="/marathon"
+        >Марафон "Пекельний тиждень"</a>
+        <a
+          class="block__text"
+          href="/"
+        >Курс "Мідл UX/UI дизайнер"</a>
       </div>
       <div class="block">
         <div class="block__heading">Контакти</div>
         <a
-          href="mailto:info@moveitacademy.com"
+          href="mailto:info@moveit.academy"
           class="block__text"
-        >info@moveitacademy.com</a>
-        <a class="block__button">
-          Маю сумніви
-          <Arrow style="margin-left: 10px; width: calc(8px * 1.25); height: calc(8px * 1.25);" />
-        </a>
-        <a class="block__button block__button--color" href="#tariffs">
+        >info@moveit.academy</a>
+        <a
+          class="block__button block__button--color"
+          href="#tariffs"
+        >
           Придбати одразу
           <Arrow style="margin-left: 10px; width: calc(8px * 1.25); height: calc(8px * 1.25);" />
         </a>
@@ -29,9 +34,11 @@
     </div>
     <div class="footer__bottom">
       <div>© 2020 – 2023 MOVE IT – Digital Design Academy</div>
-      <div style="margin-left: auto;">Договір оферти</div>
-      <div>Політика надання послуг</div>
-      <div>Політика конфіденційності</div>
+      <a
+        style="margin-left: auto;"
+        href="https://golotaeugene.notion.site/0256edf191434d2fa9068419266a6b6b?pvs=4"
+        target="_blank"
+      >Договір оферти</a>
     </div>
   </footer>
 </template>
@@ -165,6 +172,10 @@ import Arrow from '@/components/Arrow.vue'
   }
 }
 
+a {
+  color: #ffffff4d;
+}
+
 @media screen and (max-width: 800px) {
   .footer {
     width: calc(100% - 2 * 20px);
@@ -203,5 +214,4 @@ import Arrow from '@/components/Arrow.vue'
       }
     }
   }
-}
-</style>
+}</style>

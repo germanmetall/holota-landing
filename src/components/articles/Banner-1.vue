@@ -1,7 +1,7 @@
 <template>
   <article class="banner">
     <h1 class="banner__h1">Курс "Мідл UX/UI дизайнер"</h1>
-    <h2 class="banner__h2">Як UX/UI або Product дизайнеру зробити мінімум х2 до свого доходу</h2>
+    <h2 class="banner__h2">Як UX/UI або Product дизайнеру зробити х2-х3 від свого доходу</h2>
 
     <div class="banner__actions">
       <a
@@ -11,15 +11,18 @@
         Придбати одразу
         <Arrow />
       </a>
-      <div class="btn btn--transparent">
-        Маю сумніви
+      <a
+        class="btn btn--transparent"
+        href="#program"
+      >
+        Дізнатись більше
         <Arrow />
-      </div>
+      </a>
     </div>
 
     <div class="banner__text">
       <ul>
-        <li>без сильних знань англійської</li>
+        <li>без поглибленого знання англійської</li>
         <li>навіть якщо думаєш, що роботи немає</li>
         <li>та навіть якщо не віриш в себе</li>
       </ul>
@@ -119,4 +122,5 @@ import Arrow from '@/components/Arrow.vue'
       text-align: center;
     }
   }
-}</style>
+}
+</style>

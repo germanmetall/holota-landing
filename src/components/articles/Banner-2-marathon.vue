@@ -2,7 +2,7 @@
   <article class="banner">
     <div class="item">
       <div class="item__heading">Online</div>
-      <div class="item__text">Займайся будь де</div>
+      <div class="item__text">Займайся будь-де</div>
     </div>
     <div class="item">
       <div class="item__heading">Старт</div>

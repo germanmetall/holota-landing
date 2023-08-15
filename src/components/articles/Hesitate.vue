@@ -2,8 +2,7 @@
   <article class="hesitate">
     <div class="hesitate__heading">Є сумніви?</div>
     <div class="hesitate__text">
-      Через 2-3 тижні ті хто потрапили на курс обженуть тебе на рік а може і більше. Ти цього
-      бажаєш? Впевнен що ні.
+      Через 2-3 тижні ті, хто потрапили на курс, обженуть тебе на рік, а може і більше. Хочеш цього? Впевнений, що ні.
       <br /><br />
       Почни навчатись зараз, щоб успішно конкурувати з колегами по цеху у найближчому майбутньому.
       <br /><br />
@@ -11,14 +10,17 @@
     </div>
 
     <div class="hesitate__actions">
-      <a class="btn" href="#tariffs">
+      <a
+        class="btn"
+        href="#tariffs"
+      >
         Окей, стартуємо
         <Arrow />
       </a>
-      <div class="btn btn--transparent">
+      <a class="btn btn--transparent" href="#program">
         Маю сумніви
         <Arrow />
-      </div>
+      </a>
     </div>
 
     <img
@@ -100,5 +102,4 @@ import Arrow from '@/components/Arrow.vue'
       margin: auto;
     }
   }
-}
-</style>
+}</style>
