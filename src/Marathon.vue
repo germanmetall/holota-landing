@@ -1,7 +1,7 @@
 <template>
   <Header />
   <div class="page">
-    <Index />
+    <MarathonPage />
   </div>
   <Footer />
 </template>
@@ -11,7 +11,7 @@ import 'lazysizes';
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import { onMounted } from 'vue';
-import Index from "@/pages/index.vue"
+import MarathonPage from "@/pages/marathon.vue"
 
 onMounted(() => {
   const UnboundedLight = new FontFace("Unbounded", "url(./fonts/Unbounded-Light.ttf)", {
